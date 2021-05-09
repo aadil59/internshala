@@ -1,0 +1,89 @@
+.filter-toggle {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  background: #fff;
+}
+.filter-toggle > svg {
+  margin-right: 10px;
+}
+.filter-container {
+  position: fixed;
+  right: 0;
+  top: 73px;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
+  min-width: 676px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.filter-inner {
+  width: 50%;
+}
+.filter-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  font-size: 18px;
+  font-weight: 600;
+}
+.filter-container header button {
+  padding: 0;
+  background: none;
+  border: 0 none;
+  cursor: pointer;
+}
+.filter-body {
+  padding: 0 1rem;
+}
+.filter-footer {
+  padding: 1.5rem 1rem;
+  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.08);
+}
+.filter-footer .btn {
+  min-width: 150px;
+  margin-right: 12px;
+}
+@media screen and (max-width: 767px) {
+  .form-group.search {
+    width: 230px;
+  }
+  .form-group.search .form-control {
+    padding: 12px;
+  }
+  .form-group.search .btn {
+    min-width: 40px;
+  }
+  .filter-toggle {
+    font-size: 14px;
+    padding: .75rem;
+  }
+  .filter-toggle > svg {
+    height: 14px;
+    width: 14px;
+    margin-right: .4rem;
+  }
+  .filter-container {
+    min-width: 100%;
+    top: 0;
+  }
+  .filter-inner {
+    width: 100%;
+  }
+  .filter-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .filter-footer .btn {
+    margin: 0;
+  }
+}

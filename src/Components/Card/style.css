@@ -1,0 +1,79 @@
+.card {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8A8A8A;
+  margin-bottom: 12px;
+  border: 1px solid transparent;
+}
+.card.active {
+  border: 1px solid #008BDC;
+}
+.card:last-child {
+  margin-bottom: 0;
+}
+.card h3 {
+  color: #000000;
+  margin: 0;
+}
+.company {
+  margin: .3rem 0 .6rem;
+  color: #666666;
+}
+.info {
+  margin-top: 1rem;
+}
+.info svg {
+  margin-right: 10px;
+}
+.location,
+.salary,
+.duration {
+  margin-bottom: .5rem;
+}
+.bottom-card {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #008BDC;
+}
+.actions > button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 1.5rem;
+}
+.detail {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.logo {
+  height: 44px;
+  width: 44px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #F8F8F8;
+  padding: 5px;
+}
+.logo > img {
+  width: 100%;
+  border-radius: 50%;
+}
+.rating-star {
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .card {
+    margin: 0 .5rem 0 0;
+    flex-basis: 95%;
+    flex-shrink: 0;
+    border-radius: 8px 8px 0 0;
+  }
+}

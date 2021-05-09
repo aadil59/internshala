@@ -1,0 +1,36 @@
+.form-group.search {
+  width: 360px;
+  display: flex;
+}
+.form-group.search .form-control {
+  padding-right: 30px;
+  width: 100%;
+}
+.form-group.search .btn {
+  min-width: 56px;
+  border-radius: 0px 3px 3px 0px;
+  border: 0 none;
+  padding: 10px;
+}
+.search-comp {
+  position: relative;
+}
+.search-comp > ul {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+  position: absolute;
+  min-width: 360px;
+  z-index: 1;
+  margin: 0;
+}
+.search-comp > ul > li {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #666666;
+  background: #fff;
+  cursor: pointer;
+}
+.search-comp > ul > li:hover {
+  background: #EAFCFF;
+  color: #008BDC;
+}
